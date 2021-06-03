@@ -6,7 +6,7 @@ Access as a webpage via https://andrebestrada.github.io/
 
 Data is more powerful when we share it with others! Let's take what we've learned about HTML and CSS to create a dashboard showing off the analysis we've done.
 
-![World Logo](/Images/icon.png)
+![World Logo](/Images/icon.png  | width=80)
 Format: ![Alt Text](url)
 
 ### Before You Begin
