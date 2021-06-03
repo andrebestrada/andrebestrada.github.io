@@ -6,7 +6,7 @@ Access as a webpage via https://andrebestrada.github.io/
 
 Data is more powerful when we share it with others! Let's take what we've learned about HTML and CSS to create a dashboard showing off the analysis we've done.
 
-![Images/landingResize.png](Images/landingResize.png)
+![World Logo](/Images/icon.png)
 
 ### Before You Begin
 
