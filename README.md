@@ -6,7 +6,7 @@ Access as a webpage via https://andrebestrada.github.io/
 
 Data is more powerful when we share it with others! Let's take what we've learned about HTML and CSS to create a dashboard showing off the analysis we've done.
 
-<img class="bi me-2 text-center" width="60" height="60" src="Images/icon.png">
+<img class="bi me-2 center" width="80" height="80" src="Images/icon.png">
 
 
 
