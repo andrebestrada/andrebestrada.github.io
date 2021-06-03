@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>WeatherPy</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+        .bg-dark{
+            background-color: #212529!important;
+        }
+
+        .brightness {
+        background-color: white;
+        display: inline-block;
+        }
+        .brightness img:hover {
+        opacity: .5;
+        }
+    </style>
+
+
+</head>
+
+
+
+
+
+
+<body>
+
+  <nav class="navbar p-3 text-white navbar-expand-md navbar-dark bg-dark fixed-top" >
+    <div class="container-fluid">
+
+      <div class="navbar-collapse collapse">
+
+        <ul class="navbar-nav ms-auto">
+          <li>
+            <img class="bi me-2" width="42" height="42" src="Images/icon.png">
+          </li>
+
+          <a class="navbar-brand ml-3" href="Web-Design-Challenge.html">Web Desing Challenge</a>
+          <li class="nav-item">
+            <a type="button" class="nav-link text-dark font-weight-bold btn bg-warning" aria-current="page" href="Web-Design-Challenge.html">Home</a>
+          </li>
+
+
+        </ul> <!-- Nav Izquierdo-->
+
+
+        <ul class="navbar-nav ml-auto nav-pills">
+
+          <li class="nav-item pr-2">
+            <a class="nav-link" href="Comparison.html">Comparison</a>
+          </li>
+
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Plots
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="LatitudeVsTemperature.html">Temperature</a>
+              <a class="dropdown-item" href="LatitudeVsHumidity.html">Humidity</a>
+              <a class="dropdown-item" href="LatitudeVsCloudiness.html">Cloudiness</a>
+              <a class="dropdown-item" href="LatitudeVsWindSpeed.html">Wind Speed</a>
+            </div>
+          </div>
+
+
+
+          <li class="nav-item ml-3 font-weight-bold data_btn">
+            <a class="nav-link active text-center" href="Data.html">Data</a>
+          </li>
+
+        </ul>
+        
+      </div>
+    </div>
+  </nav>
+
+
+
+      <div class="container">
+        <div class="row spacer mt-5"></div>
+        <div class="row spacer mt-5"></div>
+
+        <div class="row">
+
+          <div class="col-lg-8">
+
+            <div class="jumbotron">
+              <h1 class="mt-n5">Latitude Vs Humidity</h1><hr>
+              <img src="Resources/Images_Fig2.png" class="img-thumbnail p-3">
+              <p class="text-justify">In this chart we can understand</p>
+            </div>
+
+          </div>
+
+          <div class="col-lg-4 card"> 
+            <h1 class="pt-4">Visualizations</h1>
+            <hr> 
+            <div class="p-3 mt-n3">
+              <div class="row">
+                <div class="col-lg-6 p-0 brightness">
+                  <a href="LatitudeVsTemperature.html">
+                    <img src="Resources/Images_Fig1.png" class="img-thumbnail">
+                  </a>
+
+                </div>
+
+                <div class="col-lg-6 p-0 brightness border border-primary rounded">
+                  <a href="LatitudeVsHumidity.html">
+                    <img src="Resources/Images_Fig2.png" class="img-thumbnail">
+                  </a>
+                </div>
+                  
+              </div>
+              <div class="row">
+                <div class="col-lg-6 p-0 brightness">
+                  <a href="LatitudeVsCloudiness.html">
+                    <img src="Resources/Images_Fig3.png" class="img-thumbnail">
+                  </a> 
+                </div>
+
+                <div class="col-lg-6 p-0 brightness">
+                  <a href="LatitudeVsWindSpeed.html">
+                    <img src="Resources/Images_Fig4.png" class="img-thumbnail">
+                  </a>
+                  
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+  
+
+
+        </div><!--/row-->
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <hr>
+  
+        <footer>
+          <p>OpenWeatherMap.org &copy; (2012). Сurrent weather and forecast. Retrieved from https://openweathermap.org/</p>
+        </footer>
+  
+      </div><!--/.container-->
+
+
+
+
+
+
+    
+</body>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+</html>
