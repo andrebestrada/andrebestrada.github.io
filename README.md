@@ -1,206 +1,57 @@
-# andrebestrada.github.io
-Skip to content
-Search or jump to…
+Access as a webpage via https://andrebestrada.github.io/
 
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@andrebestrada 
-DataAnalyst77002
-/
-HTML-CSS-Homework
-1
-02
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-HTML-CSS-Homework/index.html
-@DataAnalyst77002
-DataAnalyst77002 Update index.html
-Latest commit a46ce82 on 19 Oct 2019
- History
- 1 contributor
-162 lines (150 sloc)  7.75 KB
-  
-<!DOCTYPE html>
-<html lang="en">
+# Web Design Homework - Web Visualization Dashboard (Latitude)
 
-<head>
-<!--What needs to be loaded before getting into the code. -->
-  <meta charset="UTF-8">
-<!-- The title is here! -->
-  <title>Latitude Analysis Dashboard</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- reset css -->
-  <link rel="stylesheet" href="reset.css">
-  <!-- Bring in our bootstrap stylesheet -->
-  <link rel="stylesheet" 
-  href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="styles.css">
-</head>
+## Background
 
-<body>
-     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+Data is more powerful when we share it with others! Let's take what we've learned about HTML and CSS to create a dashboard showing off the analysis we've done.
 
-    <!-- A black horizontal navbar that becomes vertical on small screens -->
-    <nav class="navbar navbar-expand-sm navbar-blue">
-        <a class="nav-link" href="https://dataanalyst77002.github.io/HTML-CSS-Homework/index.html"> <!-- button which links to index that appears only when clicked near the labels -->
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"> </span>
-            </button>
-        </a>
-        <ul class="navbar-nav">
-            <!-- Home button -->
-            <li class="nav-item active">
-                <a class="nav-link" href="https://dataanalyst77002.github.io/HTML-CSS-Homework/index.html">  
-                Weather and Latitude</a>
-            </li>
-        </ul>
+![Images/landingResize.png](Images/landingResize.png)
 
-        <!-- right side of navbar -->
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item dropdown ml-auto">
-                <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="navbarDropdownMenuLink" href="#" role="button" 
-                aria-haspopup="true" aria-expanded="false">Plot</a>
-                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="https://dataanalyst77002.github.io/HTML-CSS-Homework/Temperature vs Latitude.html">Temperature</a>
-                    <a class="dropdown-item" href="https://dataanalyst77002.github.io/HTML-CSS-Homework/Humidity vs Latitude.html">Humidity</a>
-                    <a class="dropdown-item" href="https://dataanalyst77002.github.io/HTML-CSS-Homework/Cloudiness vs Latitude.html">Cloudiness</a>
-                    <a class="dropdown-item" href="https://dataanalyst77002.github.io/HTML-CSS-Homework/Windiness vs Latitude.html">Wind Speed </a>
-                </div>
-            </li> 
-            <li class="nav-item">
-                <a class="nav-link" href="https://dataanalyst77002.github.io/HTML-CSS-Homework/Comparison_Page.html">Comparison
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="https://dataanalyst77002.github.io/HTML-CSS-Homework/Data_Page.html">Data</a>
-            </li>
-        </ul>
-    </nav>
+### Before You Begin
 
-    <!-- Main Body: Twitter bootstrap -->
-      <div style="background-color:goldenrod;">
-        <div class="row">
-            <div class="col-md-12">
-                </br>
-                </br> <!-- line break to push header down -->
-            </div>
-        </div>
-      </div> <!-- background color -->
-        <!-- Header -->
-    <div class = 'container-fluid'>
-        <div class="row align-items-center">
-            <div class = 'col-md-4'></div>
-            <div class="col-lg-4">
-                <h1 class="intro">Project Summary</h1>
-            </div>
-            <div class = 'col-md-4'> </br> </br> </div>
-        </div>
-        <!-- line breaks to push header down -->
-        <div class="row">
-            <div class="col-md-12">
-                </br> 
-                </br>
-            </div>
-        </div>
+1. Create a new repository for this project called `Web-Design-Challenge`. **Do not add this homework to an existing repository**.
 
-        <!-- main content -->
-        <div class="row align-items-center">
-            <!-- summary paragraph -->
-            <div class="col-lg-6">
-                <p>In this project, I sought to analyze weather patterns based on 
-                distance to the equator. I utilized Python script to visualize the weather of 500+ cities 
-                across the world of varying distance from the equator.  To accomplish this, I utilizing
-                a simple Python library, the OpenWeatherMap API to create representative
-                models of weather across world cities.
-                </br>
-                </br>
-                I first assembled a dataset of more than 500 cities using the 
-                citipy python library and python to randomly generate coordinates to get the
-                nearest city. Then I use this list of cities to get the weather using the OpenWeatherMap API.
-                Using MatPlotLib, I used each city's maximum temperature, humidity, cloudiness, or wind speed and plotted
-                the data with the latitude on the appropriate graphs. 
-                </br>
-                </p>
-                
-            </div>
-            
-        </div>
-    </div>
+2. Clone the new repository to your computer.
 
-    <!-- Visualizations -->
-        <!-- Header -->
-    <div id = "bottom_visual" class="container"> 
-        <div class="row">
-            <div class="col-md-12">
-                </br> <!-- line break to push header down -->
-            </div>
-        </div>
-        <hr> <!-- horizontal line -->
+3. Inside your local git repository, create a directory for the web challenge. Use a folder name to correspond to the challenge: **WebVisualizations**.
 
-        <!-- Header content for visualization section -->
-        <div class="row align-items-center">
-            <div class = 'col-md-4'></br></br></br></div>
-            <div class="col-lg-4">
-                <h3 id="bot_header">Graphic Visualizations</h3>
-            </div>
-            <div class = 'col-md-4'></br></br></br></div>
-        </div>
+4. Add your **html** files to this folder as well as your **assets**, **Resources** and **visualizations** folders.
 
-        <div class="row align-items-center">
-            <div class="col-lg-3">
-                <a href="Temperature vs Latitude.html">
-                    <img class="mx-auto d-block img-fluid" src="Resources\Temperatures-n-World_Cities.png"
-                    alt = "Maximum Temperature vs. Latitude" height="225" width="300">
-                </a>
-            </div>
-            <div class="col-lg-3">
-                <a href="Humidity vs Latitude.html">
-                    <img class="mx-auto d-block img-fluid" src="Resources\Humidity-n-World_Cities.png"
-                    alt = "Humidity vs. Latitude" height="225" width="300">
-                </a>
-            </div>
-            <div class="col-lg-3">
-                <a href="Cloudiness vs Latitude.html">
-                    <img class="mx-auto d-block img-fluid" src="Resources\Cloudiness-n-World_Cities.png"
-                    alt = "Cloudiness vs. Latitude" height="225" width="300">
-                </a>
-            </div>
-            <div class="col-lg-3">
-                <a href="Windiness vs Latitude.html">
-                    <class="mx-auto d-block img-fluid" src="Resources\Wind_Speed-n-World_Cities.png"
-                    alt = "Windspeed vs. Latitude" height="225" width="300">
-                </a>
-            </div>
-        </div>
-    
-        <hr>
-    </div>
-</body>
-</html>
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
-Loading complete
+5. Push the above changes to GitHub or GitLab.
+
+## Latitude - Latitude Analysis Dashboard with Attitude
+
+For this homework we'll be creating a visualization dashboard website using visualizations we've created in a past assignment. Specifically, we'll be plotting [weather data](Resources/cities.csv).
+
+In building this dashboard, we'll create individual pages for each plot and a means by which we can navigate between them. These pages will contain the visualizations and their corresponding explanations. We'll also have a landing page, a page where we can see a comparison of all of the plots, and another page where we can view the data used to build them.
+
+### Website Requirements
+
+The website must consist of 7 pages total, including:
+
+* A [landing page](#landing-page) containing:
+  * An explanation of the project.
+  * Links to each visualizations page.
+* Four [visualization pages](#visualization-pages), each with:
+  * A descriptive title and heading tag.
+  * The plot/visualization itself for the selected comparison.
+  * A paragraph describing the plot and its significance.
+* A ["Comparisons" page](#comparisons-page) that:
+  * Contains all of the visualizations on the same page so we can easily visually compare them.
+  * Uses a bootstrap grid for the visualizations.
+    * The grid must be two visualizations across on screens medium and larger, and 1 across on extra-small and small screens.
+* A ["Data" page](#data-page) that:
+  * Displays a responsive table containing the data used in the visualizations.
+    * The table must be a bootstrap table component.
+    * The data must come from exporting the `.csv` file as HTML, or converting it to HTML. Try using a tool you already know, pandas. Pandas has a nifty method approprately called `to_html` that allows you to generate a HTML table from a pandas dataframe. See the documentation [here](https://pandas.pydata.org/pandas-docs/version/0.17.0/generated/pandas.DataFrame.to_html.html)
+
+The website must, at the top of every page, have a navigation menu that:
+
+* Has the name of the site on the left of the nav which allows users to return to the landing page from any page.
+* Contains your name with a link to your Git-Hub repository for this project. 
+* Contains a dropdown on the right of the navbar named "Plots" which provides links to each individual visualization page.
+* Provides two more links on the right: "Comparisons" which links to the comparisons page, and "Data" which links to the data page.
+* Is responsive (using media queries). The nav must have similar behavior as the screenshots ["Navigation Menu" section](#navigation-menu) (notice the background color change).
+
+Finally, the website must be deployed to GitHub pages.
