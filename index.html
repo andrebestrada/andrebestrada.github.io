@@ -5,29 +5,14 @@
   <meta charset="UTF-8">
   <link rel="icon" href="Images/icon.png">
   <title>WeatherPy</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   
   <style>
-    .bg-dark{
-        background-color: #212529!important;
-      }
-    .brightness {
-    background-color: white;
-    display: inline-block;
-    }
-    .brightness img:hover {
-    opacity: .5;
-    }
-    .data_btn{
-      width:60px;
-      position: center;
-    }
-    .bookmark{
-      width:80%;
-      height: 80%;
-      padding: 0%;
-      overflow:hidden;      
-    }
+    .bg-dark {
+    background-color: rgb(0 0 0 / 92%)!important;
+}
   </style>
 
 </head>
@@ -35,78 +20,72 @@
 
 
 
-
-
 <body>
 
-    <nav class="navbar p-3 text-white navbar-expand-md navbar-dark bg-dark fixed-top" >
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark p-2 text-white fixed-top" >
         <div class="container-fluid">
+          <div class="navbar-brand ">
+            <img class="bi me-2" width="42" height="42" src="Images/icon.png">
+            <a class="navbar-brand" href="index.html">Web Desing Challenge</a>
+            <a type="button" class="navbar-brand nav-link text-dark font-weight-bold btn bg-warning py-1" aria-current="page" href="index.html">Home</a>
 
-          <div class="navbar-collapse collapse">
-
-            <ul class="navbar-nav ms-auto">
-              <li>
-                <img class="bi me-2" width="42" height="42" src="Images/icon.png">
-              </li>
-
-              <a class="navbar-brand ml-3" href="Web-Design-Challenge.html">Web Desing Challenge</a>
-              <li class="nav-item">
-                <a type="button" class="nav-link text-dark font-weight-bold btn bg-warning" aria-current="page" href="Web-Design-Challenge.html">Home</a>
-              </li>
-
-
-            </ul> <!-- Nav Izquierdo-->
-
-
-            <ul class="navbar-nav ml-auto nav-pills">
-
-              <li class="nav-item pr-2">
-                <a class="nav-link" href="Comparison.html">Comparison</a>
-              </li>
-
-              <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Plots
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <a class="dropdown-item" href="LatitudeVsTemperature.html">Temperature</a>
-                  <a class="dropdown-item" href="LatitudeVsHumidity.html">Humidity</a>
-                  <a class="dropdown-item" href="LatitudeVsCloudiness.html">Cloudiness</a>
-                  <a class="dropdown-item" href="LatitudeVsWindSpeed.html">Wind Speed</a>
-                </div>
-              </div>
-
-
-  
-              <li class="nav-item ml-3 font-weight-bold data_btn">
-                <a class="nav-link active text-center" href="Data.html">Data</a>
-              </li>
-
-            </ul>
-            
           </div>
+
+              <!-- <li class="nav-item">
+                <a type="button" class="nav-link text-dark font-weight-bold btn bg-warning" aria-current="page" href="index.html">Home</a>
+              </li> -->
+
+
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active pr-2">
+                    <a class="nav-link" href="Comparison.html">Comparison</a>
+                  </li>
+
+                  <li class="nav-item dropdown">
+                        <a type="button" class="nav-link dropdown-toggle btn btn-light text-dark active mr-3" href="#" id="PlotsDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Plots
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="PlotsDropdown">
+
+                          <a class="dropdown-item" href="LatitudeVsTemperature.html">Temperature</a>
+                          <a class="dropdown-item" href="LatitudeVsHumidity.html">Humidity</a>
+                          <a class="dropdown-item" href="LatitudeVsCloudiness.html">Cloudiness</a>
+                          <a class="dropdown-item" href="LatitudeVsWindSpeed.html">Wind Speed</a>
+                        </div>
+                  </li>
+                  
+                  <li class="nav-item font-weight-bold data_btn">
+                    <a class="nav-link active text-center btn btn-primary font-weight-bold px-2" href="Data.html">Data</a>
+                  </li>
+                </ul>
+              </div>
+            </ul>          
         </div>
       </nav>
 
 
 
-
-    <div class="container">
-        <div class="row spacer mt-5"></div>
-        <div class="row spacer mt-5"></div>
+      <div class="container-fuid p-5">
+      <div class="row spacer mt-5"></div>
 
         <div class="row">
 
-          <div class="col-lg-8">
-            <div class="jumbotron">
+          <div class="col-sm-12 col-md-8">
+            <div class="jumbotron pb-3 ">
               <div class=container>
                 <div class=row>
-                  <h1 class="col-lg-8 mt-n5" style="width: 50%">Summary WeatherPy</h1>
-                  <div class="col-lg-4 mt-n5 "><img width="60" height="60" src="Images/longitud.png"></div>
+                  <h1 class="col-lg-6 col-sm-8 mt-n5 pr-0 float-sm-left summary" style="width: 50%">Summary WeatherPy</h1>
+                  <div class="col-lg-4 col-sm-2 mt-n5 pl-0 mb-1 world"><img width="60" height="60" src="Images/longitud.png"></div>
                 </div>
-                <hr>
+                <hr class="mt-0">
                     <p class="text-justify">The purpose of this project was to analize how weather changes as you get closer to the equator.
-                      To accomplish this, a dataset of more than 500 cities was used by the citipy python library and python helped to randomly generate coordinates to get the nearest city. 
+                      To accomplish this, a dataset of more than 500 cities was used by the citipy python library and randomly generated coordinates to get the nearest city in the dataset. 
                       <br><br>
                       A list of random cities was used to get the weather of the OpenWeatherMap API. Using MatPlotLib, it was analized each city's maximum temperature, humidity, cloudiness, or wind speed and this was plotted againts the latitude on the appropriate graphs.</p>
                   
@@ -114,61 +93,64 @@
             </div>
           </div>
 
-
-          <div class="card col-lg-4"> 
-            <h1 class="pt-4">Visualizations</h1>
-            <hr> 
-            <div class="p-3 mt-n3">
-              <div class="row">
-                <div class="col-lg-6 p-0 brightness">
-                  <a href="LatitudeVsTemperature.html">
-                    <img src="Resources/Images_Fig1.png" class="img-thumbnail">
-                  </a>
-
-                </div>
-
-                <div class="col-lg-6 p-0 brightness">
-                  <a href="LatitudeVsHumidity.html">
-                    <img src="Resources/Images_Fig2.png" class="img-thumbnail">
-                  </a>
-                </div>
-                  
+          <div class="col-sm-12 col-md-4 "> 
+            <div class="card pb-n3">
+              <div class="header mx-3">
+                <h1 class="pt-2">Visualizations</h1>
+                <hr class="mt-0"> 
               </div>
-              <div class="row">
-                <div class="col-lg-6 p-0 brightness">
-                  <a href="LatitudeVsCloudiness.html">
-                    <img src="Resources/Images_Fig3.png" class="img-thumbnail">
-                  </a> 
-                </div>
-
-                <div class="col-lg-6 p-0 brightness">
-                  <a href="LatitudeVsWindSpeed.html">
-                    <img src="Resources/Images_Fig4.png" class="img-thumbnail">
-                  </a>
-                  
+              <div class="content-fluid">
+                <div class="p-3 mx-2 mt-n3">
+                  <div class="row padding">
+                    <div class="col-sm-6 col-3 p-1 brightness">
+                      <a href="LatitudeVsTemperature.html">
+                        <img src="Resources/Images_Fig1.png" class="img-thumbnail img-fluid">
+                      </a>
+                    </div>
+                    <div class="col-sm-6 col-3 p-1 brightness">
+                      <a href="LatitudeVsHumidity.html">
+                        <img src="Resources/Images_Fig2.png" class="img-thumbnail img-fluid">
+                      </a>
+                    </div>
+                    <div class="col-sm-6 col-3 p-1 brightness">
+                      <a href="LatitudeVsCloudiness.html">
+                        <img src="Resources/Images_Fig3.png" class="img-thumbnail img-fluid">
+                      </a> 
+                    </div>
+                    <div class="col-sm-6 col-3 p-1 brightness">
+                      <a href="LatitudeVsWindSpeed.html">
+                        <img src="Resources/Images_Fig4.png" class="img-thumbnail img-fluid">
+                      </a>
+                      
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-
-
           </div>
-  
-
-
         </div><!--/row-->
 
-
+        <br>
         <div class="row">
           <div class="col-lg-6">
-            <h2>Want to know more?</h2>
-            <p>Visit weather page. </p>
+              <h2 class="m-0">Want to know more?</h2>
+              <p class=lead>Visit weather page. </p><hr>
+        
+            
+            <h1 class="mt-5 text-primary font-weight-bold m-0">OpenWeather<br></h1><h1 class="font-weight-bold"> mobile app</h1>
 
-            <h1><span class="orange-text">OpenWeather</span><br>mobile app</h1>
+            <p>A scientific yet simple approach to weather forecast. Free. No ads.</p>
+            <br>
 
+            <p><a class="p-0 btn btn-default" href="https://openweathermap.org/" role="button">Go to weather page&raquo;</a></p>
+          </div>
 
-            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-          </div><!--/.col-xs-6.col-lg-4-->
+          <div class="col-lg-6">
+            <img width="100%" height="100%" src="Images/mobile-app-banner.jpg">
+
+          </div>
         </div><!--/row-->
+        
 
 
 

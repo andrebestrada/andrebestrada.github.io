@@ -30,52 +30,51 @@
 
 <body>
 
-  <nav class="navbar p-3 text-white navbar-expand-md navbar-dark bg-dark fixed-top" >
+
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark p-2 text-white fixed-top" >
     <div class="container-fluid">
+      <div class="navbar-brand ">
+        <img class="bi me-2" width="42" height="42" src="Images/icon.png">
+        <a class="navbar-brand" href="index.html">Web Desing Challenge</a>
+        <a type="button" class="navbar-brand nav-link text-dark font-weight-bold btn bg-warning py-1" aria-current="page" href="index.html">Home</a>
 
-      <div class="navbar-collapse collapse">
-
-        <ul class="navbar-nav ms-auto">
-          <li>
-            <img class="bi me-2" width="42" height="42" src="Images/icon.png">
-          </li>
-
-          <a class="navbar-brand ml-3" href="Web-Design-Challenge.html">Web Desing Challenge</a>
-          <li class="nav-item">
-            <a type="button" class="nav-link text-dark font-weight-bold btn bg-warning" aria-current="page" href="Web-Design-Challenge.html">Home</a>
-          </li>
-
-
-        </ul> <!-- Nav Izquierdo-->
-
-
-        <ul class="navbar-nav ml-auto nav-pills">
-
-          <li class="nav-item pr-2">
-            <a class="nav-link" href="Comparison.html">Comparison</a>
-          </li>
-
-          <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Plots
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="LatitudeVsTemperature.html">Temperature</a>
-              <a class="dropdown-item" href="LatitudeVsHumidity.html">Humidity</a>
-              <a class="dropdown-item" href="LatitudeVsCloudiness.html">Cloudiness</a>
-              <a class="dropdown-item" href="LatitudeVsWindSpeed.html">Wind Speed</a>
-            </div>
-          </div>
-
-
-
-          <li class="nav-item ml-3 font-weight-bold data_btn">
-            <a class="nav-link active text-center" href="Data.html">Data</a>
-          </li>
-
-        </ul>
-        
       </div>
+
+          <!-- <li class="nav-item">
+            <a type="button" class="nav-link text-dark font-weight-bold btn bg-warning" aria-current="page" href="index.html">Home</a>
+          </li> -->
+
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active pr-2">
+                <a class="nav-link" href="Comparison.html">Comparison</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                    <a type="button" class="nav-link dropdown-toggle btn btn-light text-dark active mr-3" href="#" id="PlotsDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Plots
+                    </a>
+
+                    <div class="dropdown-menu" aria-labelledby="PlotsDropdown">
+
+                      <a class="dropdown-item" href="LatitudeVsTemperature.html">Temperature</a>
+                      <a class="dropdown-item" href="LatitudeVsHumidity.html">Humidity</a>
+                      <a class="dropdown-item" href="LatitudeVsCloudiness.html">Cloudiness</a>
+                      <a class="dropdown-item" href="LatitudeVsWindSpeed.html">Wind Speed</a>
+                    </div>
+              </li>
+              
+              <li class="nav-item font-weight-bold data_btn">
+                <a class="nav-link active text-center btn btn-primary font-weight-bold px-2" href="Data.html">Data</a>
+              </li>
+            </ul>
+          </div>
+        </ul>          
     </div>
   </nav>
 
@@ -92,7 +91,7 @@
             <div class="jumbotron">
               <h1 class="mt-n5">Latitude Vs Humidity</h1><hr>
               <img src="Resources/Images_Fig2.png" class="img-thumbnail p-3">
-              <p class="text-justify">In this chart we can understand</p>
+              <p class="mt-2 text-left">Referring to Humidity variable, <strong>the data does not show any correlation</strong> between Humidity (%) and the latitude of the city.</p>
             </div>
 
           </div>
